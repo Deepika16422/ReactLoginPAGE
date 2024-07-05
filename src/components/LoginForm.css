@@ -1,0 +1,64 @@
+/* SignupForm.css */
+.signup-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: C7B7A3;
+}
+
+.signup-form h2 {
+    margin-bottom: 10px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 15px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="date"],
+.signup-form select {
+    width: 60%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form .gender-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.signup-form .gender-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.signup-form .submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-form .submit-button:hover {
+    background-color: darkgreen;
+}
+
+.signup-form a {
+    color: blue;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
