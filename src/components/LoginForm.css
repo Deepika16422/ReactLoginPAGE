@@ -1,42 +1,101 @@
-/* SignupForm.css */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f4efe8; /* Adjust the background color to match */
+}
+
+.outline {
+    border: 1px solid gainsboro;
+    padding: 20px;
+    width: 460px; /* Adjust width to match the form's */
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-top: 50px;
+}
+
 .signup-form {
+    width: 100%;
     max-width: 400px;
-    margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: C7B7A3;
+    background-color: #f4efe8;
+    height: fit-content;
+}
+.header-container {
+    text-align: center;
+    margin-top: 30px; /* Adds space between the headings and form */
+    border-bottom: 1px solid lightgray;
+}
+.signup-form h1 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.signup-form h2 {
-    margin-bottom: 10px;
+.signup-form h4 {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .signup-form .form-group {
     margin-bottom: 15px;
+    position: relative;
 }
 
-.signup-form input[type="text"],
-.signup-form input[type="email"],
-.signup-form input[type="password"],
-.signup-form input[type="date"],
-.signup-form select {
-    width: 60%;
+.signup-form .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.signup-form .input-container input[type="text"],
+.signup-form .input-container input[type="email"],
+.signup-form .input-container input[type="password"],
+.signup-form .input-container input[type="date"] {
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: relative;
 }
 
-.signup-form .gender-options input[type="radio"] {
-    margin-right: 10px;
+.signup-form .input-container input.error {
+    border-color: red;
 }
 
-.signup-form .gender-options {
+.signup-form .gender-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
+    align-items: center;
+}
+
+.signup-form .error-symbol {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.signup-form .gender-container input[type="radio"].error + .error-symbol {
+    margin-left: 0;
+}
+
+.signup-form .gender-container input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 5px;
 }
 
 .signup-form .submit-button {
@@ -44,10 +103,11 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: whitesmoke;
-    color: blue;
+    background-color: #4caf50;
+    color: white;
     font-size: 16px;
     cursor: pointer;
+    text-align: center;
 }
 
 .signup-form .submit-button:hover {
@@ -57,6 +117,9 @@
 .signup-form a {
     color: blue;
     text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .signup-form a:hover {
